@@ -3,88 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1 & 2 - StockSim Journal</title>
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Stock Market Journal</title>
     <style>
+        /* Global Styles */
         body {
-            margin: 0;
-            font-family: 'Roboto Mono', monospace;
+            font-family: 'Arial', sans-serif;
             color: white;
             background: url('background.gif') no-repeat center center fixed;
             background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
+            margin: 0;
+            padding: 0;
         }
 
-        .content-container {
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            padding: 30px 40px;
-            max-width: 800px;
-            width: 90%;
+        h1, h2, h3 {
             text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
         }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: bold;
-            color: #00ff00;
+        /* Header Styling */
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #4caf50;
         }
 
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            color: #e0e0e0;
-            line-height: 1.6;
+        header h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 48px;
         }
 
-        .scrollable-textbox {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 1px solid white;
-            border-radius: 8px;
-            padding: 15px;
-            max-height: 300px;
-            overflow-y: auto;
-            margin: 20px 0;
+        /* Section Styling */
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        /* List & Table Styling */
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #fff;
+        }
+
+        th, td {
+            padding: 10px;
             text-align: left;
         }
 
+        /* Button Styling */
         .button {
-            display: inline-block;
             padding: 10px 20px;
-            font-size: 1rem;
+            background-color: #4caf50;
             color: white;
-            text-decoration: none;
-            border: 2px solid white;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            margin: 10px;
-            background: transparent;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         .button:hover {
-            background: white;
-            color: black;
+            background-color: #45a049;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #4caf50;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Custom styling for challenge and solution section */
+        .challenges {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="content-container">
-        <h1>Week 1 & 2</h1>
-        <div class="scrollable-textbox">
-            <p>WEEK 1 AND 2:</p>
-            <p>Add as much content as needed; this textbox will remain scrollable.</p>
-        </div>
-        <img src="IMG_1.JPG" alt="Placeholder Image 1" style="max-width: 100%; border-radius: 8px; margin: 10px 0;">
-        <img src="images/placeholder2.jpg" alt="Placeholder Image 2" style="max-width: 100%; border-radius: 8px; margin: 10px 0;">
-        <a href="index.html" class="button">Back to Home</a>
+
+<header>
+    <h1>Stock Market Journal</h1>
+    <h2>Documenting the journey of our Stock Market Simulator Project</h2>
+</header>
+
+<section>
+    <h3>Week 1</h3>
+    <ul>
+        <li>Started by making the login page.</li>
+        <li>Here’s the <a href="https://github.com/example-repo" target="_blank">GitHub link</a> we took inspiration from.</li>
+        <li>Decided to use real-time data, which meant working with an API.</li>
+        <li> learned how to work with the API and started implementing code functions.</li>
+    </ul>
+
+    <div class="challenges">
+        <h4>Challenges and Solutions</h4>
+        <ul>
+            <li><strong>Challenge:</strong> Integrating the API for real-time data.</li>
+            <li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix</li>
+        </ul>
     </div>
+
+</section>
+
+<section>
+    <h3>Week 2</h3>
+    <ul>
+        <li>Fixed bugs related to API data fetching.</li>
+        <li>Made it possible to view graphs of the stocks.</li>
+    </ul>
+
+    <div class="challenges">
+        <h4>Challenges and Solutions</h4>
+        <ul>
+            <li><strong>Challenge:How to connect the API in all the functions like buy/sell, portfolio etc?</strong> </li>
+        </ul>
+    </div>
+</section>
+    <img class="project-image" src="week2-progress.jpg" alt="Week 2 Progress Screenshot">
+
+
+<section>
+    <h3>Project Timeline</h3>
+    <ul>
+        <li><strong>Week 1:</strong> Set up login page and basic API integration.</li>
+        <li><strong>Week 2:</strong> Debugged API, created real-time stock data features.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Developed by Adit and Dhwani </p>
+</footer>
+
 </body>
 </html>
