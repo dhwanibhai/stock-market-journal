@@ -3,85 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EquiLogs</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>StockSim Journal</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --background-color: #F5F5F5;
-            --primary-color: #32CD32;
-            --secondary-color: #FF4500;
-            --accent-color: #FFD700;
-        }
-
+        /* General Styles */
         body {
-            font-family: 'Roboto Mono', monospace;
-            background: linear-gradient(to bottom, #1c1c1c, #363636);
-            color: var(--accent-color);
             margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        .header {
-            font-family: 'Orbitron', sans-serif;
-            text-align: center;
-            font-size: 3rem;
-            padding: 1rem;
-            animation: flicker 2s infinite;
-        }
-
-        @keyframes flicker {
-            0%, 100% { color: var(--accent-color); }
-            50% { color: white; }
-        }
-
-        .nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .nav a {
-            color: var(--primary-color);
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .btn {
-            background: var(--primary-color);
+            font-family: 'Roboto Mono', monospace; /* Clean stock-market style font */
             color: white;
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            cursor: pointer;
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        .btn:hover {
-            background: var(--secondary-color);
+        /* Background Striations */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                rgba(0, 128, 0, 0.2),
+                rgba(0, 128, 0, 0.2) 20px,
+                rgba(255, 0, 0, 0.2) 20px,
+                rgba(255, 0, 0, 0.2) 40px
+            );
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        /* Buttons */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            margin: 10px;
+            background: transparent;
+        }
+
+        .button:hover {
+            background: white;
+            color: black;
+        }
+
+        /* Flex container for buttons */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header">EquiLogs</div>
-    <div class="nav">
-        <a href="#">Home</a>
-        <a href="#">Gallery</a>
-        <a href="#">Journal</a>
-        <a href="#">Contact</a>
-    </div>
-    <div class="hero">
-        <h1>Welcome to EquiLogs</h1>
-        <p>Tracking the highs and lows of my stock market simulation journey</p>
-        <button class="btn">View Progress</button>
-        <button class="btn">Start Journey</button>
+    <h1>StockSim Journal</h1>
+    <p>Welcome to my stock market simulator journal! Here, you'll find the journey of building this simulator with insights, progress updates, and more.</p>
+    
+    <div class="button-container">
+        <a href="page1.html" class="button">Page 1</a>
+        <a href="page2.html" class="button">Page 2</a>
+        <a href="page3.html" class="button">Page 3</a>
     </div>
 </body>
 </html>
