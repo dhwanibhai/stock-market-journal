@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stock Market Journal</title>
-<style>
-/* Global Styles */
-body {
-font-family: 'Arial', sans-serif;
-color: white;
-background: url('background.gif') no-repeat center center fixed;
-background-size: cover;
-margin: 0;
-padding: 0;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Journal</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            color: white;
+            background: url('background.gif') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
 
-h1, h2, h3 {
-text-align: center;
-}
+        h1, h2, h3 {
+            text-align: center;
+        }
 
-/* Header Styling */
-header {
-padding: 20px;
-background-color: rgba(0, 0, 0, 0.6);
-color: #4caf50;
-}
+        /* Header Styling */
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #4caf50;
+        }
 
-header h1 {
-font-family: 'Courier New', Courier, monospace;
-font-size: 48px;
-}
+        header h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 48px;
+        }
 
-/* Section Styling */
-section {
-padding: 20px;
-margin: 10px;
-background-color: rgba(0, 0, 0, 0.7);
-border-radius: 10px;
-}
+        /* Section Styling */
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
 
-/* List Styling */
-ul, ol {
-padding-left: 20px;
-}
+        /* List Styling */
+        ul, ol {
+            padding-left: 20px;
+        }
 
-/* Image Styling */
-figure {
-text-align: center;
-margin: 20px auto;
-}
+        /* Image Styling */
+        figure {
+            text-align: center;
+            margin: 10px auto;
+        }
 
         /* Gallery Styling */
         .image-gallery {
@@ -57,121 +57,126 @@ margin: 20px auto;
             gap: 15px;
             justify-content: center;
         }
-        
-.project-image {
-            max-width: 80%;
+
+        .project-image {
             width: 100%;
-height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            height: 250px;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+        }
 
-        
-figcaption {
-            color: #4caf50;
+        figcaption {
             text-align: center;
-font-size: 14px;
-            margin-top: 5px;
+            font-size: 14px;
             color: #ccc;
             padding: 5px;
-}
+        }
 
+        /* Footer Styling */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #4caf50;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
 
-/* Footer Styling */
-footer {
-background-color: rgba(0, 0, 0, 0.8);
-color: #4caf50;
-text-align: center;
-padding: 20px;
-position: fixed;
-width: 100%;
-bottom: 0;
-}
+        /* Challenges Section */
+        .challenges {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-/* Challenges Section */
-.challenges {
-background-color: rgba(255, 255, 255, 0.2);
-padding: 15px;
-border-radius: 10px;
-}
-</style>
+        /* Specific image size for bottom images */
+        .full-screen-image {
+            width: 100%;
+            height: 75vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
 </head>
 <body>
 
 <header>
-<h1>Stock Market Journal</h1>
-<h2>Documenting the journey of our Stock Market Simulator Project</h2>
+    <h1>Stock Market Journal</h1>
+    <h2>Documenting the journey of our Stock Market Simulator Project</h2>
 </header>
 
 <section>
-<h3>Week 1</h3>
-<ul>
-<li>Started by making the login page.</li>
-<li>Here’s the <a href="https://github.com/example-repo" target="_blank">GitHub link</a> we took inspiration from.</li>
-<li>Decided to use real-time data, which meant working with an API.</li>
-<li>Learned how to work with the API and started implementing code functions.</li>
-</ul>
+    <h3>Week 1</h3>
+    <ul>
+        <li><strong>October 30, 2024</strong>: Agreed to implement a stock market simulator function.</li>
+        <li><strong>November 8, 2024</strong>: Made login function; went relatively smoothly. Got code from GitHub and modified it.</li>
+        <li><strong>November 13, 2024</strong>: Added Alpha Vantage API, set it up with keys on both devices. Faced limitations with free-tier API (only 25 uses).</li>
+        <li><strong>November 15, 2024</strong>: Added main menu and .gitignore.</li>
+    </ul>
 
-<div class="challenges">
-<h4>Challenges and Solutions</h4>
-<ul>
-<li><strong>Challenge:</strong> Integrating the API for real-time data.</li>
-<li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix.</li>
-</ul>
-</div>
+    <div class="challenges">
+        <h4>Challenges and Solutions</h4>
+        <ul>
+            <li><strong>Challenge:</strong> Couldn’t generate the API Access Token initially.</li>
+            <li><strong>Solution:</strong> Resolved by checking the API setup process and correcting the authentication steps.</li>
+            <li><strong>Challenge:</strong> Accidentally pushed API Key to GitHub.</li>
+            <li><strong>Solution:</strong> Immediately revoked the key and updated the .gitignore to prevent future pushes.</li>
+        </ul>
+    </div>
 </section>
 
 <section>
-<h3>Week 2</h3>
-<ul>
-<li>Fixed bugs related to API data fetching.</li>
-<li>Made it possible to view graphs of the stocks.</li>
-</ul>
+    <h3>Week 2</h3>
+    <ul>
+        <li><strong>November 16, 2024</strong>: Implemented buy/sell function and portfolio.</li>
+        <li><strong>November 23, 2024</strong>: Implemented a Funds Management System. Progress on retrieving historical & real-time market data using APIs.</li>
+        <li><strong>November 26, 2024</strong>: Attempted AngelOne API integration, but struggled with the documentation. Switched to Zerodha API for ₹2000.</li>
+        <li><strong>November 30, 2024</strong>: Set up .h files for functions but struggled with linking them correctly, and the main function was only three lines long.</li>
+    </ul>
 
-<div class="challenges">
-<h4>Challenges and Solutions</h4>
-<ul>
-<li><strong>Challenge:</strong> How to connect the API in all the functions like buy/sell, portfolio, etc.?</li>
-</ul>
-</div>
+    <div class="challenges">
+        <h4>Challenges and Solutions</h4>
+        <ul>
+            <li><strong>Challenge:</strong> Path issues and not changing the working directory properly.</li>
+            <li><strong>Solution:</strong> Fixed directory structure and worked on file organization.</li>
+            <li><strong>Challenge:</strong> Had to filter through 85,000+ instruments to get the correct instrument token for API requests.</li>
+            <li><strong>Solution:</strong> Implemented filtering logic to streamline the process of selecting valid tokens.</li>
+        </ul>
+    </div>
 </section>
 
-<!-- Image Section -->
-<figure>
-    <img class="project-image" src="checklist.jpg" alt="Week 2 Progress Screenshot">
-    <figcaption>discussed the to-do.</figcaption>
-</figure>
-<figure>
-    <img class="project-image" src="graph.jpg" alt="Week 2 Progress Screenshot">
-    <figcaption>Figure 1: Stock price graph implemented during Week 2.</figcaption>
 <section>
-    <h3>screensho†s</h3>
+    <h3>Project Images</h3>
     <div class="image-gallery">
         <figure>
-            <img class="project-image" src="IMG_7896.PNG" alt="Image 1">
+            <img class="project-image" src="IMG_7896.PNG" alt="Week 2 Progress Image 1">
+            <figcaption>Portfolio screen during Week 2 implementation.</figcaption>
         </figure>
         <figure>
-            <img class="project-image" src="IMG_7888.PNG" alt="Image 2">
+            <img class="project-image" src="IMG_7889.PNG" alt="Week 2 Progress Image 2">
+            <figcaption>Functionality for viewing real-time stock data in Week 2.</figcaption>
         </figure>
         <figure>
-            <img class="project-image" src="IMG_7889.PNG" alt="Image 3">
+            <img class="project-image" src="IMG_7890.jpg" alt="Week 2 Progress Image 3">
+            <figcaption>Testing API connections and debugging issues.</figcaption>
         </figure>
     </div>
 </section>
 
-
 <section>
-<h3>Project Timeline</h3>
-<ul>
-<li><strong>Week 1:</strong> Set up login page and basic API integration.</li>
-<li><strong>Week 2:</strong> Debugged API, created real-time stock data features.</li>
-</ul>
+    <h3>Project Timeline</h3>
+    <ul>
+        <li><strong>Week 1:</strong> Set up login page, started API integration, and learned basic data fetching.</li>
+        <li><strong>Week 2:</strong> Fixed bugs with API, created real-time data features, and implemented a portfolio management system.</li>
+    </ul>
 </section>
 
 <footer>
-<p>Developed by Adit and Dhwani</p>
+    <p>Developed by Adit and Dhwani</p>
 </footer>
 
 </body>
