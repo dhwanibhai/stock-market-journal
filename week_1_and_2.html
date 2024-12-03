@@ -6,8 +6,9 @@
     <title>Stock Market Journal</title>
     <style>
         /* Global Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: white;
             background: url('background.gif') no-repeat center center fixed;
             background-size: cover;
@@ -15,81 +16,65 @@
             padding: 0;
         }
 
-        h1, h2, h3 {
+        h1, h2, h3, h4, p, ul {
             text-align: center;
         }
 
-        /* Header Styling */
         header {
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.7);
             color: #4caf50;
+            border-bottom: 2px solid #4caf50;
         }
 
         header h1 {
-            font-family: 'Courier New', Courier, monospace;
             font-size: 48px;
+            margin-bottom: 10px;
         }
 
-        /* Section Styling */
+        header h2 {
+            font-size: 24px;
+        }
+
         section {
             padding: 20px;
-            margin: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
-        /* List & Table Styling */
-        ul, ol {
-            padding-left: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        table, th, td {
-            border: 1px solid #fff;
-        }
-
-        th, td {
-            padding: 10px;
+        ul {
+            list-style-type: disc;
+            padding-left: 40px;
             text-align: left;
         }
 
-        /* Button Styling */
-        .button {
-            padding: 10px 20px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
+        .challenges {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
         }
 
-        .button:hover {
-            background-color: #45a049;
+        .project-image {
+            display: block;
+            max-width: 80%;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
-        /* Footer Styling */
         footer {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.9);
             color: #4caf50;
             text-align: center;
             padding: 20px;
             position: fixed;
-            width: 100%;
             bottom: 0;
-        }
-
-        /* Custom styling for challenge and solution section */
-        .challenges {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            border-radius: 10px;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
@@ -97,26 +82,24 @@
 
 <header>
     <h1>Stock Market Journal</h1>
-    <h2>Documenting the journey of our Stock Market Simulator Project</h2>
+    <h2>Documenting the Journey of Our Stock Market Simulator Project</h2>
 </header>
 
 <section>
     <h3>Week 1</h3>
     <ul>
         <li>Started by making the login page.</li>
-        <li>Here’s the <a href="https://github.com/example-repo" target="_blank">GitHub link</a> we took inspiration from.</li>
+        <li>Here’s the <a href="https://github.com/example-repo" target="_blank" style="color: #4caf50;">GitHub link</a> we took inspiration from.</li>
         <li>Decided to use real-time data, which meant working with an API.</li>
-        <li> learned how to work with the API and started implementing code functions.</li>
+        <li>Learned how to work with the API and started implementing code functions.</li>
     </ul>
-
     <div class="challenges">
         <h4>Challenges and Solutions</h4>
         <ul>
             <li><strong>Challenge:</strong> Integrating the API for real-time data.</li>
-            <li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix</li>
+            <li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix.</li>
         </ul>
     </div>
-
 </section>
 
 <section>
@@ -125,16 +108,14 @@
         <li>Fixed bugs related to API data fetching.</li>
         <li>Made it possible to view graphs of the stocks.</li>
     </ul>
-
     <div class="challenges">
         <h4>Challenges and Solutions</h4>
         <ul>
-            <li><strong>Challenge:How to connect the API in all the functions like buy/sell, portfolio etc?</strong> </li>
+            <li><strong>Challenge:</strong> How to connect the API in all the functions like buy/sell, portfolio, etc.?</li>
         </ul>
     </div>
-</section>
     <img class="project-image" src="week2-progress.jpg" alt="Week 2 Progress Screenshot">
-
+</section>
 
 <section>
     <h3>Project Timeline</h3>
@@ -145,7 +126,7 @@
 </section>
 
 <footer>
-    <p>Developed by Adit and Dhwani </p>
+    <p>Developed by Adit and Dhwani</p>
 </footer>
 
 </body>
