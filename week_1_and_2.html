@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Journal</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap');
+
         /* Global Styles */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         body {
             font-family: 'Roboto', sans-serif;
             color: white;
@@ -16,46 +17,57 @@
             padding: 0;
         }
 
-        h1, h2, h3, h4, p, ul {
-            text-align: center;
-        }
-
         header {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.8);
             color: #4caf50;
-            border-bottom: 2px solid #4caf50;
+            text-align: center;
+            border-bottom: 3px solid #4caf50;
         }
 
         header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         header h2 {
-            font-size: 24px;
+            font-size: 28px;
+            margin-top: 10px;
+            color: #fff;
         }
 
         section {
             padding: 20px;
-            margin: 20px auto;
+            margin: 30px auto;
             max-width: 800px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.85);
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         }
 
-        ul {
+        section h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+            color: #4caf50;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        section ul {
             list-style-type: disc;
             padding-left: 40px;
             text-align: left;
+            font-size: 18px;
         }
 
         .challenges {
             background-color: rgba(255, 255, 255, 0.2);
-            padding: 15px;
+            padding: 20px;
             margin-top: 20px;
             border-radius: 10px;
+            font-size: 18px;
         }
 
         .project-image {
@@ -63,7 +75,7 @@
             max-width: 80%;
             margin: 20px auto;
             border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         }
 
         footer {
@@ -71,9 +83,7 @@
             color: #4caf50;
             text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
         }
     </style>
