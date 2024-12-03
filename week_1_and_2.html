@@ -6,91 +6,92 @@
     <title>Stock Market Journal</title>
     <style>
         /* Global Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            color: white;
-            background: url('background.gif') no-repeat center center fixed;
-            background-size: cover;
-            margin: 0;
-            padding: 0;
-        }
+       /* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
 
-        h1, h2, h3 {
-            text-align: center;
-        }
+h1, h2, h3 {
+    text-align: center;
+}
 
-        /* Header Styling */
-        header {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: #4caf50;
-        }
+/* Header Styling */
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #4caf50;
+}
 
-        header h1 {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 48px;
-        }
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
+}
 
-        /* Section Styling */
-        section {
-            padding: 20px;
-            margin: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-        }
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
 
-        /* List Styling */
-        ul, ol {
-            padding-left: 20px;
-        }
+/* List Styling */
+ul, ol {
+    padding-left: 20px;
+}
 
-        /* Image Styling */
-        figure {
-            text-align: center;
-            margin: 20px auto;
-        }
+/* Image Styling */
+figure {
+    text-align: center;
+    margin: 20px auto;
+}
 
-        .project-image {
-            width: 100%;
-            height: 250px; /* Ensuring a consistent image height */
-            object-fit: cover; /* Maintain aspect ratio and cover the area */
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        }
+.project-image {
+    width: 100%;
+    height: 250px; /* Ensuring a consistent image height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
-        figcaption {
-            text-align: center;
-            font-size: 14px;
-            color: #ccc;
-            padding: 5px;
-        }
+figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    padding: 5px;
+}
 
-        /* Gallery Styling */
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-            justify-content: center;
-        }
+/* Gallery Styling */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
 
-        /* Footer Styling */
-        footer {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #4caf50;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #4caf50;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 
-        /* Challenges Section */
-        .challenges {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 15px;
-            border-radius: 10px;
-        }
-    </style>
+/* Challenges Section */
+.challenges {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
 </head>
 <body>
 
@@ -145,23 +146,24 @@
         <figure>
             <img class="project-image" src="IMG_7889.PNG" alt="Image 3">
         </figure>
-        <figure>
-            <img class="project-image" src="IMG_7890.jpg" alt="Image 4">
-        </figure>
     </div>
 </section>
 
-<!-- Week 2 Images -->
-<figure>
-    <img class="project-image" src="week2-progress.jpg" alt="Week 2 Progress Screenshot">
-    <img class="project-image" src="checklist.jpg" alt="Week 2 Progress Screenshot">
-    <figcaption>Discussed the to-do.</figcaption>
-</figure>
-
-<figure>
-    <img class="project-image" src="graph.jpg" alt="Week 2 Progress Screenshot">
-    <figcaption>Stock price graph implemented during Week 2.</figcaption>
-</figure>
+<section>
+    <h3>Week 2 Progress</h3>
+    <figure>
+        <img class="project-image" src="week2-progress.jpg" alt="Week 2 Progress Screenshot" style="height: auto;">
+        <figcaption>Discussed the to-do.</figcaption>
+    </figure>
+    <figure>
+        <img class="project-image" src="checklist.jpg" alt="Checklist" style="height: auto;">
+        <figcaption>Checklist for tasks completed in Week 2.</figcaption>
+    </figure>
+    <figure>
+        <img class="project-image" src="graph.jpg" alt="Stock Price Graph" style="height: auto;">
+        <figcaption>Stock price graph implemented during Week 2.</figcaption>
+    </figure>
+</section>
 
 <section>
     <h3>Project Timeline</h3>
