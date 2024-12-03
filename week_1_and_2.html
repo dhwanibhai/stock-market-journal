@@ -1,151 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Market Journal</title>
-    <style>
-        /* Global Styles */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stock Market Journal</title>
+<style>
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    color: white;
-    background: url('background.gif') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
+font-family: 'Arial', sans-serif;
+color: white;
+background: url('background.gif') no-repeat center center fixed;
+background-size: cover;
+margin: 0;
+padding: 0;
 }
 
 h1, h2, h3 {
-    text-align: center;
+text-align: center;
 }
 
 /* Header Styling */
 header {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #4caf50;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.6);
+color: #4caf50;
 }
 
 header h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 48px;
+font-family: 'Courier New', Courier, monospace;
+font-size: 48px;
 }
 
 /* Section Styling */
 section {
-    padding: 20px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
+padding: 20px;
+margin: 10px;
+background-color: rgba(0, 0, 0, 0.7);
+border-radius: 10px;
 }
 
 /* List Styling */
 ul, ol {
-    padding-left: 20px;
+padding-left: 20px;
 }
 
 /* Image Styling */
 figure {
-    text-align: center;
-    margin: 10px auto;
+text-align: center;
+margin: 20px auto;
 }
 
+        /* Gallery Styling */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            justify-content: center;
+        }
+        
 .project-image {
-    width: 100%;
-    height: 250px; /* Ensuring a consistent image height */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            max-width: 80%;
+            width: 100%;
+height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+        
 figcaption {
-    text-align: center;
-    font-size: 14px;
-    color: #ccc;
-    padding: 5px;
+            color: #4caf50;
+            text-align: center;
+font-size: 14px;
+            margin-top: 5px;
+            color: #ccc;
+            padding: 5px;
 }
 
-/* Gallery Styling */
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    margin-bottom: 20px;
-}
 
 /* Footer Styling */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #4caf50;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+background-color: rgba(0, 0, 0, 0.8);
+color: #4caf50;
+text-align: center;
+padding: 20px;
+position: fixed;
+width: 100%;
+bottom: 0;
 }
 
 /* Challenges Section */
 .challenges {
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    border-radius: 10px;
+background-color: rgba(255, 255, 255, 0.2);
+padding: 15px;
+border-radius: 10px;
 }
-
-/* Specific image size for bottom images */
-.full-screen-image {
-    width: 100%;
-    height: 75vh; /* 75% of the viewport height */
-    object-fit: contain; /* Ensure the whole image is visible */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
 </style>
 </head>
 <body>
 
 <header>
-    <h1>Stock Market Journal</h1>
-    <h2>Documenting the journey of our Stock Market Simulator Project</h2>
+<h1>Stock Market Journal</h1>
+<h2>Documenting the journey of our Stock Market Simulator Project</h2>
 </header>
 
 <section>
-    <h3>Week 1</h3>
-    <ul>
-        <li>Started by making the login page.</li>
-        <li>Here’s the <a href="https://github.com/example-repo" target="_blank">GitHub link</a> we took inspiration from.</li>
-        <li>Decided to use real-time data, which meant working with an API.</li>
-        <li>Learned how to work with the API and started implementing code functions.</li>
-    </ul>
+<h3>Week 1</h3>
+<ul>
+<li>Started by making the login page.</li>
+<li>Here’s the <a href="https://github.com/example-repo" target="_blank">GitHub link</a> we took inspiration from.</li>
+<li>Decided to use real-time data, which meant working with an API.</li>
+<li>Learned how to work with the API and started implementing code functions.</li>
+</ul>
 
-    <div class="challenges">
-        <h4>Challenges and Solutions</h4>
-        <ul>
-            <li><strong>Challenge:</strong> Integrating the API for real-time data.</li>
-            <li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix.</li>
-        </ul>
-    </div>
+<div class="challenges">
+<h4>Challenges and Solutions</h4>
+<ul>
+<li><strong>Challenge:</strong> Integrating the API for real-time data.</li>
+<li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix.</li>
+</ul>
+</div>
 </section>
 
 <section>
-    <h3>Week 2</h3>
-    <ul>
-        <li>Fixed bugs related to API data fetching.</li>
-        <li>Made it possible to view graphs of the stocks.</li>
-    </ul>
+<h3>Week 2</h3>
+<ul>
+<li>Fixed bugs related to API data fetching.</li>
+<li>Made it possible to view graphs of the stocks.</li>
+</ul>
 
-    <div class="challenges">
-        <h4>Challenges and Solutions</h4>
-        <ul>
-            <li><strong>Challenge:</strong> How to connect the API in all the functions like buy/sell, portfolio, etc.?</li>
-        </ul>
-    </div>
+<div class="challenges">
+<h4>Challenges and Solutions</h4>
+<ul>
+<li><strong>Challenge:</strong> How to connect the API in all the functions like buy/sell, portfolio, etc.?</li>
+</ul>
+</div>
 </section>
 
 <!-- Image Section -->
+<figure>
+    <img class="project-image" src="checklist.jpg" alt="Week 2 Progress Screenshot">
+    <figcaption>discussed the to-do.</figcaption>
+</figure>
+<figure>
+    <img class="project-image" src="graph.jpg" alt="Week 2 Progress Screenshot">
+    <figcaption>Figure 1: Stock price graph implemented during Week 2.</figcaption>
 <section>
-    <h3>Project Images</h3>
+    <h3>screensho†s</h3>
     <div class="image-gallery">
         <figure>
             <img class="project-image" src="IMG_7896.PNG" alt="Image 1">
@@ -156,28 +158,20 @@ footer {
         <figure>
             <img class="project-image" src="IMG_7889.PNG" alt="Image 3">
         </figure>
-        <figure>
-            <img class="project-image" src="IMG_7890.jpg" alt="Image 4">
-        </figure>
     </div>
 </section>
 
-<section>
-    <h3>Week 2 Progress</h3>
 
-    <figure class="full-screen-image">
-        <img src="checklist.jpg" alt="Checklist">
-        <figcaption>Checklist for tasks completed in Week 2.</figcaption>
-    </figure>
-    <figure class="full-screen-image">
-        <img src="graph.jpg" alt="Stock Price Graph">
-        <figcaption>Stock price graph implemented during Week 2.</figcaption>
-    </figure>
+<section>
+<h3>Project Timeline</h3>
+<ul>
+<li><strong>Week 1:</strong> Set up login page and basic API integration.</li>
+<li><strong>Week 2:</strong> Debugged API, created real-time stock data features.</li>
+</ul>
 </section>
 
-
 <footer>
-    <p>Developed by Adit and Dhwani</p>
+<p>Developed by Adit and Dhwani</p>
 </footer>
 
 </body>
