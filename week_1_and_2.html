@@ -1,15 +1,13 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Market Journal</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap');
-
         /* Global Styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Arial', sans-serif;
             color: white;
             background: url('background.gif') no-repeat center center fixed;
             background-size: cover;
@@ -17,74 +15,70 @@ h<!DOCTYPE html>
             padding: 0;
         }
 
-        header {
-            padding: 30px;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #4caf50;
+        h1, h2, h3 {
             text-align: center;
-            border-bottom: 3px solid #4caf50;
+        }
+
+        /* Header Styling */
+        header {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #4caf50;
         }
 
         header h1 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 60px;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 48px;
         }
 
-        header h2 {
-            font-size: 28px;
-            margin-top: 10px;
-            color: #fff;
-        }
-
+        /* Section Styling */
         section {
             padding: 20px;
-            margin: 30px auto;
-            max-width: 800px;
-            background-color: rgba(0, 0, 0, 0.85);
+            margin: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
         }
 
-        section h3 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 32px;
-            color: #4caf50;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-            margin-bottom: 20px;
+        /* List Styling */
+        ul, ol {
+            padding-left: 20px;
         }
 
-        section ul {
-            list-style-type: disc;
-            padding-left: 40px;
-            text-align: left;
-            font-size: 18px;
-        }
-
-        .challenges {
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            font-size: 18px;
+        /* Image Styling */
+        figure {
+            text-align: center;
+            margin: 20px auto;
         }
 
         .project-image {
-            display: block;
             max-width: 80%;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
 
+        figcaption {
+            color: #4caf50;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* Footer Styling */
         footer {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
             color: #4caf50;
             text-align: center;
             padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Challenges Section */
+        .challenges {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -92,32 +86,23 @@ h<!DOCTYPE html>
 
 <header>
     <h1>Stock Market Journal</h1>
-    <h2>Documenting the Journey of Our Stock Market Simulator Project</h2>
+    <h2>Documenting the journey of our Stock Market Simulator Project</h2>
 </header>
 
 <section>
     <h3>Week 1</h3>
     <ul>
-        <li>Discussed the ideas and broke it down into a checklist.</li>
         <li>Started by making the login page.</li>
-        <li>Here’s the <a href="https://github.com/The-Young-Programmer/C-CPP-Programming/blob/main/Projects/C%2B%2B%20Projects/Basic/A%20Login%20and%20Registration%20System/login.cpp" target="_blank" style="color: #4caf50;">GitHub link</a> we took inspiration from.</li>
+        <li>Here’s the <a href="https://github.com/example-repo" target="_blank">GitHub link</a> we took inspiration from.</li>
         <li>Decided to use real-time data, which meant working with an API.</li>
         <li>Learned how to work with the API and started implementing code functions.</li>
     </ul>
-    <figure>
-    <img src="checklist.jpg" alt="planning and checklisting" />
-    <figcaption>Planning and checklisting.</figcaption>
-    </figure>
-    <figure>
-    <img src="discuss.JPG" alt="meeting at jp" />
-    <figcaption>Meeting at coffee nation to discuss ideas.</figcaption>
-    </figure>
+
     <div class="challenges">
         <h4>Challenges and Solutions</h4>
         <ul>
             <li><strong>Challenge:</strong> Integrating the API for real-time data.</li>
             <li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix.</li>
-            
         </ul>
     </div>
 </section>
@@ -128,18 +113,28 @@ h<!DOCTYPE html>
         <li>Fixed bugs related to API data fetching.</li>
         <li>Made it possible to view graphs of the stocks.</li>
     </ul>
-    <figure>
-    <img src="graph.jpg" alt="added a graph" />
-    <figcaption>Calling an external website to show stock graph.</figcaption>
-    </figure>
+
     <div class="challenges">
         <h4>Challenges and Solutions</h4>
         <ul>
-            <li><strong>Challenge:</strong> How to connect the API in all the functions like buy/sell, portfolio, etc?</li>
+            <li><strong>Challenge:</strong> How to connect the API in all the functions like buy/sell, portfolio, etc.?</li>
         </ul>
     </div>
 </section>
 
+<!-- Image Section -->
+<figure>
+    <img class="project-image" src="week2-progress.jpg" alt="Week 2 Progress Screenshot">
+    <figcaption>Figure 1: Stock price graph implemented during Week 2.</figcaption>
+</figure>
+
+<section>
+    <h3>Project Timeline</h3>
+    <ul>
+        <li><strong>Week 1:</strong> Set up login page and basic API integration.</li>
+        <li><strong>Week 2:</strong> Debugged API, created real-time stock data features.</li>
+    </ul>
+</section>
 
 <footer>
     <p>Developed by Adit and Dhwani</p>
