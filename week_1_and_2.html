@@ -64,16 +64,38 @@ ul {
     padding-left: 40px;
     list-style-type: disc;
     line-height: 1.8;
+    margin: 0;
 }
 
-/* Center-aligning the dates */
+/* Style for each list item */
 ul li {
-    text-align: center; /* Center-aligns the entire list item */
+    margin-bottom: 20px; /* Adds space between each item */
+    position: relative; /* Positioning for date block */
 }
 
+/* Date styling */
 ul li strong {
-    display: block; /* Makes the date appear on a new line */
-    margin-bottom: 5px; /* Adds space between the date and the text */
+    font-size: 16px; /* Larger size for the date */
+    color: #ff9800; /* Orange color for the date */
+    display: block; /* Date appears on a new line */
+    text-align: center; /* Center-align the date */
+    margin-bottom: 5px; /* Space between the date and the text */
+    font-weight: bold; /* Bold date for emphasis */
+}
+
+/* Style the timeline entry text */
+ul li span {
+    display: block;
+    text-align: left;
+    padding-left: 20px; /* Indent text for a cleaner look */
+}
+
+/* Optional: Adding subtle border and background to dates for distinction */
+ul li strong {
+    background-color: rgba(255, 152, 0, 0.2); /* Light orange background */
+    border-radius: 5px; /* Slight rounding for the date block */
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 /* Image Section Styling */
