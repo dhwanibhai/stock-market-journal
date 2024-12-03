@@ -61,41 +61,42 @@ section h3 {
 }
 
 ul {
-    padding-left: 40px;
-    list-style-type: disc;
+    padding-left: 0; /* Remove bullets */
+    list-style-type: none; /* Remove list style */
     line-height: 1.8;
     margin: 0;
 }
 
-/* Style for each list item */
+/* Style for each timeline entry */
 ul li {
     margin-bottom: 20px; /* Adds space between each item */
-    position: relative; /* Positioning for date block */
+}
+
+/* Timeline entry container */
+.timeline-entry {
+    background-color: rgba(129, 199, 132, 0.2); /* Light green background */
+    border: 1px solid #81c784; /* Green border around the box */
+    border-radius: 5px; /* Slight rounding for the text box */
+    padding: 15px; /* Padding inside the box */
+    width: 80%; /* Fixed width for uniform boxes */
+    margin: 0 auto; /* Center-align the box */
 }
 
 /* Date styling */
-ul li strong {
+.timeline-entry strong {
     font-size: 16px; /* Larger size for the date */
-    color: #ff9800; /* Orange color for the date */
-    display: block; /* Date appears on a new line */
-    text-align: center; /* Center-align the date */
-    margin-bottom: 5px; /* Space between the date and the text */
+    color: #81c784; /* Light green color for the date */
     font-weight: bold; /* Bold date for emphasis */
+    display: block; /* Date on a separate line */
+    margin-bottom: 8px; /* Space between the date and the text */
 }
 
-/* Style the timeline entry text */
-ul li span {
+/* Content styling */
+.timeline-entry span {
+    font-size: 14px; /* Regular font size for the content */
+    color: #f0f0f0; /* Light text color */
     display: block;
     text-align: left;
-    padding-left: 20px; /* Indent text for a cleaner look */
-}
-
-/* Optional: Adding subtle border and background to dates for distinction */
-ul li strong {
-    background-color: rgba(255, 152, 0, 0.2); /* Light orange background */
-    border-radius: 5px; /* Slight rounding for the date block */
-    padding: 5px;
-    margin-bottom: 10px;
 }
 
 /* Image Section Styling */
@@ -140,33 +141,143 @@ footer {
     <h2>Documenting the Journey of Our Stock Market Simulator Project</h2>
 </header>
 
-<section>
-    <h3>Project Timeline</h3>
-    <ul>
-        <li><strong>October 30:</strong> Brainstormed and finalized the idea for a stock market simulator. Outlined core functionalities, including real-time trading and portfolio tracking.</li>
-        <li><strong>November 1:</strong> Installed essential development tools and libraries. Set up Git repository and project folder structure.</li>
-        <li><strong>November 4:</strong> Drafted the initial wireframe for the user interface, focusing on simplicity and intuitiveness.</li>
-        <li><strong>November 6:</strong> Encountered challenges setting up the development environment on Windows machines due to missing dependencies.</li>
-        <li><strong>November 8:</strong> Developed a secure login system using hashed passwords and email-based recovery options. Referenced GitHub repositories for inspiration.</li>
-        <li><strong>November 10:</strong> Designed a modular backend structure with separate files for user authentication, portfolio management, and data retrieval. Encountered synchronization issues when multiple users accessed the database concurrently.</li>
-        <li><strong>November 12:</strong> Integrated AlphaVantage API for market data. Faced API key invalidation due to incorrect setup, delaying integration by a day.</li>
-        <li><strong>November 15:</strong> Completed the main menu interface. Options included "Trade Stocks," "View Portfolio," and "Funds Management." Implemented a placeholder for live data updates.</li>
-        <li><strong>November 18:</strong> Resolved a critical bug in user portfolio updates. Debugging revealed an issue with rounding errors in financial calculations.</li>
-        <li><strong>November 20:</strong> Implemented the buy/sell functionality with real-time pricing. Calculated brokerage fees dynamically for each transaction. Encountered issues with delayed API responses causing transaction errors.</li>
-        <li><strong>November 21:</strong> Optimized the trading algorithm for better performance. Identified a major bug where incorrect stock prices were being fetched due to time-zone differences.</li>
-        <li><strong>November 23:</strong> Developed a funds management system, allowing users to deposit, withdraw, and view transaction history. Encountered data persistence issues during withdrawal operations.</li>
-        <li><strong>November 25:</strong> Introduced stock trend graphs with interactive features. Users could compare up to three stocks simultaneously. Faced challenges in rendering graphs on older browser versions.</li>
-        <li><strong>November 26:</strong> Attempted integration of AngelOne API but faced documentation issues. Switched to Zerodha API for ₹2000, which offered better support. <img src="transaction.png" alt="Transaction Screenshot" class="project-image"></li>
-        <li><strong>November 27:</strong> Faced a system crash due to memory leaks in data retrieval functions. Implemented fixes to manage memory allocation more effectively.</li>
-        <li><strong>November 28:</strong> Restructured codebase for scalability. Documented dependencies and workflows for team reference. Added unit tests for critical components.</li>
-        <li><strong>November 29:</strong> Tested the system with mock data. Identified and fixed performance bottlenecks in data retrieval functions. Debugged an issue where large portfolios caused UI freezing.</li>
-        <li><strong>November 30:</strong> Set up header files for modular programming. Debugged function calls and ensured smooth integration across modules. Fixed an issue with uninitialized variables causing random crashes.</li>
-        <li><strong>December 1:</strong> Added a notification system to alert users about stock price fluctuations and market news. Encountered issues with duplicate notifications during peak market hours.</li>
-        <li><strong>December 2:</strong> Debugged an infinite loop issue in the trade module. Improved error handling to prevent recurrence. Conducted stress testing with multiple simulated users.</li>
-        <li><strong>December 3:</strong> Designed and launched this journal to showcase our project journey and highlight achievements. Faced CSS alignment issues during deployment.</li>
-        <li><strong>December 5:</strong> Conducted a final round of testing and optimization. Prepared project for deployment and presentation. Encountered last-minute issues with API rate limits under heavy usage.</li>
-    </ul>
-</section>
+    <section>
+        <h3>Project Timeline</h3>
+        <ul>
+            <li>
+                <div class="timeline-entry">
+                    <strong>October 30:</strong>
+                    <span>Brainstormed and finalized the idea for a stock market simulator. Outlined core functionalities, including real-time trading and portfolio tracking.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 1:</strong>
+                    <span>Installed essential development tools and libraries. Set up Git repository and project folder structure.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 4:</strong>
+                    <span>Drafted the initial wireframe for the user interface, focusing on simplicity and intuitiveness.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 6:</strong>
+                    <span>Encountered challenges setting up the development environment on Windows machines due to missing dependencies.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 8:</strong>
+                    <span>Developed a secure login system using hashed passwords and email-based recovery options. Referenced GitHub repositories for inspiration.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 10:</strong>
+                    <span>Designed a modular backend structure with separate files for user authentication, portfolio management, and data retrieval. Encountered synchronization issues when multiple users accessed the database concurrently.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 12:</strong>
+                    <span>Integrated AlphaVantage API for market data. Faced API key invalidation due to incorrect setup, delaying integration by a day.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 15:</strong>
+                    <span>Completed the main menu interface. Options included "Trade Stocks," "View Portfolio," and "Funds Management." Implemented a placeholder for live data updates.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 18:</strong>
+                    <span>Resolved a critical bug in user portfolio updates. Debugging revealed an issue with rounding errors in financial calculations.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 20:</strong>
+                    <span>Implemented the buy/sell functionality with real-time pricing. Calculated brokerage fees dynamically for each transaction. Encountered issues with delayed API responses causing transaction errors.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 21:</strong>
+                    <span>Optimized the trading algorithm for better performance. Identified a major bug where incorrect stock prices were being fetched due to time-zone differences.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 23:</strong>
+                    <span>Developed a funds management system, allowing users to deposit, withdraw, and view transaction history. Encountered data persistence issues during withdrawal operations.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 25:</strong>
+                    <span>Introduced stock trend graphs with interactive features. Users could compare up to three stocks simultaneously. Faced challenges in rendering graphs on older browser versions.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 26:</strong>
+                    <span>Attempted integration of AngelOne API but faced documentation issues. Switched to Zerodha API for ₹2000, which offered better support.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 27:</strong>
+                    <span>Faced a system crash due to memory leaks in data retrieval functions. Implemented fixes to manage memory allocation more effectively.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 28:</strong>
+                    <span>Restructured codebase for scalability. Documented dependencies and workflows for team reference. Added unit tests for critical components.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 29:</strong>
+                    <span>Tested the system with mock data. Identified and fixed performance bottlenecks in data retrieval functions. Debugged an issue where large portfolios caused UI freezing.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>November 30:</strong>
+                    <span>Set up header files for modular programming. Debugged function calls and ensured smooth integration across modules. Fixed an issue with uninitialized variables causing random crashes.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>December 1:</strong>
+                    <span>Added a notification system to alert users about stock price fluctuations and market news. Encountered issues with duplicate notifications during peak market hours.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>December 2:</strong>
+                    <span>Debugged an infinite loop issue in the trade module. Improved error handling to prevent recurrence. Conducted stress testing with multiple simulated users.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>December 3:</strong>
+                    <span>Designed and launched this journal to showcase our project journey and highlight achievements. Faced CSS alignment issues during deployment.</span>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-entry">
+                    <strong>December 5:</strong>
+                    <span>Conducted a final round of testing and optimization. Prepared project for deployment and presentation. Encountered last-minute issues with API rate limits under heavy usage.</span>
+                </div>
+            </li>
+        </ul>
+    </section>
 
 <!-- Image Section -->
 <figure>
