@@ -7,8 +7,8 @@
 <style>
 /* Global Styles */
 body {
-    font-family: 'Verdana', sans-serif;
-    color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #f0f0f0;
     background: url('background.gif') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
@@ -23,38 +23,78 @@ h1, h2, h3 {
 /* Header Styling */
 header {
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #4caf50;
+    border-bottom: 2px solid #4caf50;
 }
 
 header h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 48px;
+    margin: 10px 0;
+}
+
+header h2 {
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 /* Section Styling */
 section {
     padding: 20px;
     margin: 20px auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 15px;
     width: 80%;
     text-align: left;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
+    color: #ffffff;
 }
 
-/* List Styling */
+section h3 {
+    color: #4caf50;
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
 ul {
     padding-left: 40px;
     list-style-type: disc;
-    text-align: left;
+    line-height: 1.8;
+}
+
+/* Image Section Styling */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+figcaption {
+    font-size: 14px;
+    color: #cccccc;
+    margin-top: 10px;
 }
 
 /* Footer Styling */
 footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #4caf50;
     text-align: center;
     padding: 20px;
+    border-top: 2px solid #4caf50;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -73,7 +113,10 @@ footer {
     <ul>
         <li><strong>October 30:</strong> Brainstormed and finalized the idea for a stock market simulator. Outlined core functionalities, including real-time trading and portfolio tracking.</li>
         <li><strong>November 1:</strong> Installed essential development tools and libraries. Set up Git repository and project folder structure.</li>
-        <li><strong>November 8:</strong> Developed a secure login system. Referenced GitHub repositories for inspiration.</li>
+        <li><strong>November 4:</strong> Drafted the initial wireframe for the user interface, focusing on simplicity and intuitiveness.</li>
+        <li><strong>November 6:</strong> Encountered challenges setting up the development environment on Windows machines due to missing dependencies.</li>
+        <li><strong>November 8:</strong> Developed a secure login system using hashed passwords and email-based recovery options. Referenced GitHub repositories for inspiration.</li>
+        <li><strong>November 10:</strong> Designed a modular backend structure with separate files for user authentication, portfolio management, and data retrieval. Encountered synchronization issues when multiple users accessed the database concurrently.</li>
         <li><strong>November 12:</strong> Integrated AlphaVantage API for market data. Faced API key invalidation due to incorrect setup, delaying integration by a day.</li>
         <li><strong>November 15:</strong> Completed the main menu interface. Options included "Trade Stocks," "View Portfolio," and "Funds Management." Implemented a placeholder for live data updates.</li>
         <li><strong>November 18:</strong> Resolved a critical bug in user portfolio updates. Debugging revealed an issue with rounding errors in financial calculations.</li>
