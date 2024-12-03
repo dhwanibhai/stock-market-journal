@@ -7,147 +7,121 @@
 <style>
 /* Global Styles */
 body {
-font-family: 'Arial', sans-serif;
-color: white;
-background: url('background.gif') no-repeat center center fixed;
-background-size: cover;
-margin: 0;
-padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background: url('background.gif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
-text-align: center;
+    text-align: center;
 }
 
 /* Header Styling */
 header {
-padding: 20px;
-background-color: rgba(0, 0, 0, 0.6);
-color: #4caf50;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #4caf50;
 }
 
 header h1 {
-font-family: 'Courier New', Courier, monospace;
-font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 48px;
 }
 
 /* Section Styling */
 section {
-padding: 20px;
-margin: 10px;
-background-color: rgba(0, 0, 0, 0.7);
-border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 
 /* List Styling */
 ul, ol {
-padding-left: 20px;
+    padding-left: 20px;
 }
 
 /* Image Styling */
 figure {
-text-align: center;
-margin: 20px auto;
+    text-align: center;
+    margin: 20px auto;
 }
 
-        /* Gallery Styling */
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
-            justify-content: center;
-        }
-        
+/* Gallery Styling */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+
 .project-image {
-            max-width: 80%;
-            width: 100%;
-height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 80%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-        
 figcaption {
-            color: #4caf50;
-            text-align: center;
-font-size: 14px;
-            margin-top: 5px;
-            color: #ccc;
-            padding: 5px;
+    color: #4caf50;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #ccc;
+    padding: 5px;
 }
-
 
 /* Footer Styling */
 footer {
-background-color: rgba(0, 0, 0, 0.8);
-color: #4caf50;
-text-align: center;
-padding: 20px;
-position: fixed;
-width: 100%;
-bottom: 0;
-}
-
-/* Challenges Section */
-.challenges {
-background-color: rgba(255, 255, 255, 0.2);
-padding: 15px;
-border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #4caf50;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 </style>
 </head>
 <body>
 
 <header>
-<h1>Stock Market Journal</h1>
-<h2>Documenting the journey of our Stock Market Simulator Project</h2>
+    <h1>Stock Market Journal</h1>
+    <h2>Documenting the journey of our Stock Market Simulator Project</h2>
 </header>
 
 <section>
-<h3>Week 1</h3>
-<ul>
-<li>Started by making the login page.</li>
-<li>Here’s the <a href="https://github.com/example-repo" target="_blank">GitHub link</a> we took inspiration from.</li>
-<li>Decided to use real-time data, which meant working with an API.</li>
-<li>Learned how to work with the API and started implementing code functions.</li>
-</ul>
-
-<div class="challenges">
-<h4>Challenges and Solutions</h4>
-<ul>
-<li><strong>Challenge:</strong> Integrating the API for real-time data.</li>
-<li><strong>Solution:</strong> Got delayed prices using AlphaVantage API. Temporary and free fix.</li>
-</ul>
-</div>
-</section>
-
-<section>
-<h3>Week 2</h3>
-<ul>
-<li>Fixed bugs related to API data fetching.</li>
-<li>Made it possible to view graphs of the stocks.</li>
-</ul>
-
-<div class="challenges">
-<h4>Challenges and Solutions</h4>
-<ul>
-<li><strong>Challenge:</strong> How to connect the API in all the functions like buy/sell, portfolio, etc.?</li>
-</ul>
-</div>
+    <h3>Project Timeline</h3>
+    <ul>
+        <li><strong>October 30:</strong> Agreed to implement a stock market simulator function.</li>
+        <li><strong>November 8:</strong> Developed the login function. Referenced and modified code from a GitHub repository to suit our needs.</li>
+        <li><strong>November 13:</strong> Integrated the AlphaVantage API on both devices using API keys. Encountered limitations with free-tier usage (25 requests and end-of-day data only).</li>
+        <li><strong>November 15:</strong> Added the main menu and a .gitignore file.</li>
+        <li><strong>November 16:</strong> Implemented core functionalities: buy/sell, portfolio management.</li>
+        <li><strong>November 23:</strong> Introduced a funds management system and made progress in retrieving historical and real-time market data through APIs.</li>
+        <li><strong>November 26:</strong> Attempted to integrate the AngelOne API but found its documentation challenging. Opted to purchase the Zerodha API for ₹2000. <img src="transaction.png" alt="Transaction Screenshot" class="project-image"></li>
+        <li><strong>November 30:</strong> Organized .h files for all functions. Faced challenges understanding function calls, resulting in a minimal main file with just three lines. Debugging stalled due to API setup issues on one device.</li>
+        <li><strong>December 2:</strong> Resolved an infinite loop in the buy/sell function after two hours of debugging.</li>
+        <li><strong>December 3:</strong> Completed the project journal, designing and hosting this website.</li>
+    </ul>
 </section>
 
 <!-- Image Section -->
 <figure>
-    <img class="project-image" src="checklist.jpg" alt="Week 2 Progress Screenshot">
-    <figcaption>discussed the to-do.</figcaption>
+    <img class="project-image" src="checklist.jpg" alt="Project Checklist">
+    <figcaption>Discussion on the project checklist.</figcaption>
 </figure>
 <figure>
-    <img class="project-image" src="graph.jpg" alt="Week 2 Progress Screenshot">
-    <figcaption>Figure 1: Stock price graph implemented during Week 2.</figcaption>
+    <img class="project-image" src="graph.jpg" alt="Stock Graph">
+    <figcaption>Stock price graph implemented during the project.</figcaption>
+</figure>
+
 <section>
-    <h3>screensho†s</h3>
+    <h3>Screenshots</h3>
     <div class="image-gallery">
         <figure>
             <img class="project-image" src="IMG_7896.PNG" alt="Image 1">
@@ -161,9 +135,8 @@ border-radius: 10px;
     </div>
 </section>
 
-
 <footer>
-<p>Developed by Adit and Dhwani</p>
+    <p>Developed by Adit and Dhwani</p>
 </footer>
 
 </body>
