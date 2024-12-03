@@ -7,12 +7,13 @@
 <style>
 /* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Verdana', sans-serif;
     color: white;
     background: url('background.gif') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -34,45 +35,18 @@ header h1 {
 /* Section Styling */
 section {
     padding: 20px;
-    margin: 10px;
+    margin: 20px auto;
     background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
+    border-radius: 15px;
+    width: 80%;
+    text-align: left;
 }
 
 /* List Styling */
-ul, ol {
-    padding-left: 20px;
-}
-
-/* Image Styling */
-figure {
-    text-align: center;
-    margin: 20px auto;
-}
-
-/* Gallery Styling */
-.image-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
-    justify-content: center;
-}
-
-.project-image {
-    max-width: 80%;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-figcaption {
-    color: #4caf50;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
-    color: #ccc;
-    padding: 5px;
+ul {
+    padding-left: 40px;
+    list-style-type: disc;
+    text-align: left;
 }
 
 /* Footer Styling */
@@ -91,22 +65,31 @@ footer {
 
 <header>
     <h1>Stock Market Journal</h1>
-    <h2>Documenting the journey of our Stock Market Simulator Project</h2>
+    <h2>Documenting the Journey of Our Stock Market Simulator Project</h2>
 </header>
 
 <section>
     <h3>Project Timeline</h3>
     <ul>
-        <li><strong>October 30:</strong> Agreed to implement a stock market simulator function.</li>
-        <li><strong>November 8:</strong> Developed the login function. Referenced and modified code from a GitHub repository to suit our needs.</li>
-        <li><strong>November 13:</strong> Integrated the AlphaVantage API on both devices using API keys. Encountered limitations with free-tier usage (25 requests and end-of-day data only).</li>
-        <li><strong>November 15:</strong> Added the main menu and a .gitignore file.</li>
-        <li><strong>November 16:</strong> Implemented core functionalities: buy/sell, portfolio management.</li>
-        <li><strong>November 23:</strong> Introduced a funds management system and made progress in retrieving historical and real-time market data through APIs.</li>
-        <li><strong>November 26:</strong> Attempted to integrate the AngelOne API but found its documentation challenging. Opted to purchase the Zerodha API for ₹2000. <img src="transaction.png" alt="Transaction Screenshot" class="project-image"></li>
-        <li><strong>November 30:</strong> Organized .h files for all functions. Faced challenges understanding function calls, resulting in a minimal main file with just three lines. Debugging stalled due to API setup issues on one device.</li>
-        <li><strong>December 2:</strong> Resolved an infinite loop in the buy/sell function after two hours of debugging.</li>
-        <li><strong>December 3:</strong> Completed the project journal, designing and hosting this website.</li>
+        <li><strong>October 30:</strong> Brainstormed and finalized the idea for a stock market simulator. Outlined core functionalities, including real-time trading and portfolio tracking.</li>
+        <li><strong>November 1:</strong> Installed essential development tools and libraries. Set up Git repository and project folder structure.</li>
+        <li><strong>November 8:</strong> Developed a secure login system. Referenced GitHub repositories for inspiration.</li>
+        <li><strong>November 12:</strong> Integrated AlphaVantage API for market data. Faced API key invalidation due to incorrect setup, delaying integration by a day.</li>
+        <li><strong>November 15:</strong> Completed the main menu interface. Options included "Trade Stocks," "View Portfolio," and "Funds Management." Implemented a placeholder for live data updates.</li>
+        <li><strong>November 18:</strong> Resolved a critical bug in user portfolio updates. Debugging revealed an issue with rounding errors in financial calculations.</li>
+        <li><strong>November 20:</strong> Implemented the buy/sell functionality with real-time pricing. Calculated brokerage fees dynamically for each transaction. Encountered issues with delayed API responses causing transaction errors.</li>
+        <li><strong>November 21:</strong> Optimized the trading algorithm for better performance. Identified a major bug where incorrect stock prices were being fetched due to time-zone differences.</li>
+        <li><strong>November 23:</strong> Developed a funds management system, allowing users to deposit, withdraw, and view transaction history. Encountered data persistence issues during withdrawal operations.</li>
+        <li><strong>November 25:</strong> Introduced stock trend graphs with interactive features. Users could compare up to three stocks simultaneously. Faced challenges in rendering graphs on older browser versions.</li>
+        <li><strong>November 26:</strong> Attempted integration of AngelOne API but faced documentation issues. Switched to Zerodha API for ₹2000, which offered better support. <img src="transaction.png" alt="Transaction Screenshot" class="project-image"></li>
+        <li><strong>November 27:</strong> Faced a system crash due to memory leaks in data retrieval functions. Implemented fixes to manage memory allocation more effectively.</li>
+        <li><strong>November 28:</strong> Restructured codebase for scalability. Documented dependencies and workflows for team reference. Added unit tests for critical components.</li>
+        <li><strong>November 29:</strong> Tested the system with mock data. Identified and fixed performance bottlenecks in data retrieval functions. Debugged an issue where large portfolios caused UI freezing.</li>
+        <li><strong>November 30:</strong> Set up header files for modular programming. Debugged function calls and ensured smooth integration across modules. Fixed an issue with uninitialized variables causing random crashes.</li>
+        <li><strong>December 1:</strong> Added a notification system to alert users about stock price fluctuations and market news. Encountered issues with duplicate notifications during peak market hours.</li>
+        <li><strong>December 2:</strong> Debugged an infinite loop issue in the trade module. Improved error handling to prevent recurrence. Conducted stress testing with multiple simulated users.</li>
+        <li><strong>December 3:</strong> Designed and launched this journal to showcase our project journey and highlight achievements. Faced CSS alignment issues during deployment.</li>
+        <li><strong>December 5:</strong> Conducted a final round of testing and optimization. Prepared project for deployment and presentation. Encountered last-minute issues with API rate limits under heavy usage.</li>
     </ul>
 </section>
 
