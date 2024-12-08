@@ -142,142 +142,112 @@ footer {
 </header>
 
     <section>
-        <h3>Project Timeline</h3>
-        <ul>
-            <li>
-                <div class="timeline-entry">
-                    <strong>October 30:</strong>
-                    <span>Brainstormed and finalized the idea for a stock market simulator. Outlined core functionalities, including real-time trading and portfolio tracking.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 1:</strong>
-                    <span>Installed essential development tools and libraries. Set up Git repository and project folder structure.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 4:</strong>
-                    <span>Drafted the initial wireframe for the user interface, focusing on simplicity and intuitiveness.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 6:</strong>
-                    <span>Encountered challenges setting up the development environment on Windows machines due to missing dependencies.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 8:</strong>
-                    <span>Developed a secure login system using hashed passwords and email-based recovery options. Referenced GitHub repositories for inspiration.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 10:</strong>
-                    <span>Designed a modular backend structure with separate files for user authentication, portfolio management, and data retrieval. Encountered synchronization issues when multiple users accessed the database concurrently.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 12:</strong>
-                    <span>Integrated AlphaVantage API for market data. Faced API key invalidation due to incorrect setup, delaying integration by a day.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 15:</strong>
-                    <span>Completed the main menu interface. Options included "Trade Stocks," "View Portfolio," and "Funds Management." Implemented a placeholder for live data updates.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 18:</strong>
-                    <span>Resolved a critical bug in user portfolio updates. Debugging revealed an issue with rounding errors in financial calculations.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 20:</strong>
-                    <span>Implemented the buy/sell functionality with real-time pricing. Calculated brokerage fees dynamically for each transaction. Encountered issues with delayed API responses causing transaction errors.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 21:</strong>
-                    <span>Optimized the trading algorithm for better performance. Identified a major bug where incorrect stock prices were being fetched due to time-zone differences.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 23:</strong>
-                    <span>Developed a funds management system, allowing users to deposit, withdraw, and view transaction history. Encountered data persistence issues during withdrawal operations.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 25:</strong>
-                    <span>Introduced stock trend graphs with interactive features. Users could compare up to three stocks simultaneously. Faced challenges in rendering graphs on older browser versions.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 26:</strong>
-                    <span>Attempted integration of AngelOne API but faced documentation issues. Switched to Zerodha API for ₹2000, which offered better support.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 27:</strong>
-                    <span>Faced a system crash due to memory leaks in data retrieval functions. Implemented fixes to manage memory allocation more effectively.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 28:</strong>
-                    <span>Restructured codebase for scalability. Documented dependencies and workflows for team reference. Added unit tests for critical components.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 29:</strong>
-                    <span>Tested the system with mock data. Identified and fixed performance bottlenecks in data retrieval functions. Debugged an issue where large portfolios caused UI freezing.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>November 30:</strong>
-                    <span>Set up header files for modular programming. Debugged function calls and ensured smooth integration across modules. Fixed an issue with uninitialized variables causing random crashes.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>December 1:</strong>
-                    <span>Added a notification system to alert users about stock price fluctuations and market news. Encountered issues with duplicate notifications during peak market hours.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>December 2:</strong>
-                    <span>Debugged an infinite loop issue in the trade module. Improved error handling to prevent recurrence. Conducted stress testing with multiple simulated users.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>December 3:</strong>
-                    <span>Designed and launched this journal to showcase our project journey and highlight achievements. Faced CSS alignment issues during deployment.</span>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-entry">
-                    <strong>December 5:</strong>
-                    <span>Conducted a final round of testing and optimization. Prepared project for deployment and presentation. Encountered last-minute issues with API rate limits under heavy usage.</span>
-                </div>
-            </li>
-        </ul>
-    </section>
+    <h3>Project Timeline</h3>
+    <ul>
+        <li>
+            <div class="timeline-entry">
+                <strong>October 30:</strong>
+                <span>Formed teams and finalized the idea for StockSim. Outlined the core functionalities such as real-time trading, portfolio tracking, and watchlist features.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 6:</strong>
+                <span>Met to discuss the layout and basic planning. Decided on a modular architecture to facilitate development and integration.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 8:</strong>
+                <span>Implemented a secure login system using GitHub integration for authentication. Tested the system for edge cases, such as invalid credentials and multiple logins.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 10:</strong>
+                <span>Integrated the Alpha Vantage free API to fetch stock market data. Debugged an issue where API keys were incorrectly configured, delaying implementation.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 12:</strong>
+                <span>Began to utilize Alpha Vantage's closing prices for market analysis and stock trading. Improved error handling for API rate limits.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 13-16:</strong>
+                <span>Built key features including portfolio management, positions tracking, funds management, the main menu interface, and a watchlist for favorite stocks.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 18:</strong>
+                <span>Attempted integration with Angel One API but faced unclear documentation. Pivoted to exploring alternative solutions.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 20:</strong>
+                <span>Purchased the Kite Connect API for ₹2000 to access live market data. Set up and tested API integration. Encountered initial performance issues due to delayed responses.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 22:</strong>
+                <span>Modified all functions to work with live market data from Kite Connect API. Encountered compilation issues when consolidating multiple functions into one main function.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 26:</strong>
+                <span>Met with Prajish Sir to explore working with header files for a modular code structure. Learned to manage interdependencies across modules.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 27:</strong>
+                <span>Resolved a device-specific issue where the Kite Connect API was not functioning correctly. Completed a fresh setup on the affected device.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>November 30:</strong>
+                <span>Created `.h` files for all functions, consolidated the main function into a 3-liner main, and resolved multiple bugs during the debugging process.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>December 1:</strong>
+                <span>Addressed remaining compilation issues using a Makefile to streamline the build process and enable minimal commands for integration.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>December 3:</strong>
+                <span>Introduced multiple user functionalities and dynamic portfolio views with non-blocking mode to enhance user experience without clearing the terminal.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>December 6:</strong>
+                <span>Added trade history and timestamps for transactions. Fixed additional bugs reported during internal testing.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>December 7:</strong>
+                <span>Developed functionality to create a user file automatically when a new user is added, ensuring better user data management.</span>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-entry">
+                <strong>December 8:</strong>
+                <span>Created the README file to document the project, including installation steps, dependencies, and a usage guide.</span>
+            </div>
+        </li>
+    </ul>
+</section>
 
 <!-- Image Section -->
 <figure>
